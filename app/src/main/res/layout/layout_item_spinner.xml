@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:background="@drawable/item_click"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        tools:text="请假类型"/>
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner"
+        android:gravity="end"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:textAlignment="viewEnd"
+        android:layout_toRightOf="@id/tv_label"
+        android:layout_toEndOf="@id/tv_label"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+    <include layout="@layout/view_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_label"/>
+</RelativeLayout>
+

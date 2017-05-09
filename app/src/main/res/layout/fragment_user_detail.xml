@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_layout_title"/>
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        tools:src="@drawable/ic_chat_right"/>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="名字"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="中间名"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_middle_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="姓"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="昵称"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="电子邮件"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="修改"/>
+
+</LinearLayout>

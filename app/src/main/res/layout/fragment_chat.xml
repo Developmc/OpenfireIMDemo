@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_layout_title"
+        android:id="@+id/layout_title"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/send"/>
+        <ImageView
+            android:id="@+id/iv_other"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_add"/>
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@+id/iv_other"
+            android:layout_toEndOf="@+id/iv_other"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:layout_toStartOf="@+id/btn_send"
+            android:hint="请输入内容"/>
+        <RelativeLayout
+            android:id="@+id/other_layout"
+            android:visibility="gone"
+            android:layout_below="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="图片"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/layout_title"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

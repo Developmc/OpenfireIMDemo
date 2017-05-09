@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyOpenfireDemo</string>
+
+    <string name="logging_in">Logging in</string>
+    <string name="send">Send</string>
+</resources>
